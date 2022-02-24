@@ -682,7 +682,6 @@ The field under validation must have a valid decimal value.
 
 <RuleDemo rule="double" />
 
-```vue
 <ValidationProvider rules="double" v-slot="{ errors }">
   <input type="text" v-model="value">
   <span>{{ errors[0] }}</span>
@@ -697,7 +696,7 @@ The field under validation must have a valid decimal value.
 | Param Name  | Required? | Default | Description                                              |
 | ----------- | --------- | ------- | -------------------------------------------------------- |
 | `decimals`  | no        | `0`     | The count of decimal places (0 for accepting any count). |
-| `separator` | no        | `dot`   | The separator (. or ,).                                  |
+| `separator` | no        | `dot`   | The separator (`"dot"` or `"comma"`).                    |
 
 <style lang="stylus">
 .Rules
